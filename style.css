@@ -1,0 +1,112 @@
+:root {
+  --color-yellow: #f4d04e;
+  --color-gray-950: #111111;
+  --color-gray-500: #6b6b6b;
+  --color-white: #ffffff;
+  --typography-primary: 800 24px/150% 'Figtree', sans-serif;
+  --typography-secondary: 500 16px/150% 'Figtree', sans-serif;
+  --typography-tertiary: 500 14px/150% 'Figtree', sans-serif;
+  --typography-quaternary: 800 14px/150% 'Figtree', sans-serif;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+  --spacing-50: 4px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  align-items: center;
+  background-color: var(--color-yellow);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  padding: var(--spacing-300);
+  width: 100vw;
+}
+
+.card {
+  background-color: var(--color-white);
+  border: var(--color-gray-950) solid 1px;
+  border-radius: 20px;
+  box-shadow: var(--color-gray-950) 8px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+  padding: var(--spacing-300);
+  width: 384px;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-150);
+}
+
+.chips {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-yellow);
+  width: 82px;
+  height: 29px;
+  border-radius: 4px;
+  font: var(--typography-quaternary);
+  color: var(--color-gray-950);
+}
+
+.published-date {
+  color: var(--color-gray-950);
+  font: var(--typography-tertiary);
+}
+
+.title {
+  font: var(--typography-primary);
+  color: var(--color-gray-950);
+}
+
+.title:hover {
+  color: var(--color-yellow);
+  cursor: pointer;
+}
+
+.description {
+  font: var(--typography-secondary);
+  color: var(--color-gray-500);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-150);
+  color: var(--color-gray-950);
+  font: var(--typography-quaternary);
+}
+
+.author img {
+  width: 32px;
+  height: 32px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+  font: var(--typography-tertiary);
+}
+
+.footer a {
+  color: #3e52a3;
+}
